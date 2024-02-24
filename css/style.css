@@ -1,0 +1,515 @@
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+    font-family: Noto Sans JP;
+    font-weight: Regular;
+    line-height: 1.75;
+    color: #333333;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  
+  /* 部品
+  ------------------------------------------ */
+  /* flexbox */
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Outfitフォント */
+  .outfit {
+    font-family: Noto Sans JP;
+  }
+
+
+  /* ヘッダー
+------------------------------------------ */
+.header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  padding: 18px 16px;
+  top: 0px;
+  left: 0px;
+  width: 375px;
+  height: 70px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 8px #0000001A;
+  opacity: 1;
+}
+@media (min-width: 768px){
+.header{
+  width: 1920px;
+  height: 101px;
+  box-shadow: 0px 2px 8px #00000029;
+}
+}
+
+/* ロゴ */
+.header-logo-link{
+  top: 18px;
+  left: 16px;
+  width: 166px;
+  height: 34px;
+}
+@media (min-width: 768px){
+.header-logo-link{
+  width: 12.5rem;
+}
+}
+
+.header-logo img {
+max-width: 16.8125rem;
+vertical-align: baseline;
+}
+
+/* ハンバーガーボタン */
+.hamburger-button{
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 305px;
+  width: 70px;
+  height: 70px;
+  color: #ffffff;
+  background-color: #005BAC;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+.hamburger-button {
+  display: none;
+}
+}
+
+.hamburger-button-bar {
+width: 1.5rem;
+height: 0.125rem;
+background-color: #fff;
+}
+
+/* ハンバーガーメニュー */
+.hamburger-menu{
+position: fixed;
+top: 70px;
+width: 100%;
+height: 331px;
+background-color: #005BAC;
+transition: all 0.3s;
+opacity: 0;
+visibility: hidden;
+}
+@media (min-width: 768px){
+.hamburger-menu{
+  display: flex;
+  position: relative;
+  top: unset;
+  left: unset;
+  visibility: visible;
+  padding: 0;
+  width: auto;
+  height: auto;
+  background: unset;
+  transition: unset;
+  opacity: unset;
+}
+}
+
+@media (min-width: 768px){
+.header .button-pink{
+  display: none;
+}
+}
+
+/* スライドイン後の位置の指定 */
+.hamburger-menu-active {
+opacity: 1;
+visibility: visible;
+}
+
+/* ハンバーガーメニューリスト */
+.hamburger-menu-list {
+  font: normal normal medium 18px/26px Source Han Sans JP;
+  padding: 0px 20px 21px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+@media (min-width: 768px){
+  .hamburger-menu-list{
+  display: flex;
+  column-gap: 2.25rem;
+  margin-right: 1.5rem;
+  font-size: 0.9375rem;
+  }
+}
+
+.menu-list{
+  padding: 20px 20px 21px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  border-bottom: 1px solid;
+}
+
+.button-icon{
+  width: 14px;
+  height: 12px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+}
+
+
+/*メインビジュアル
+------------------------------------------ */
+.mainVIsual{
+  margin-top: 70px;
+  width: 100%;
+  height: 15.625rem;
+  background-image: url("../images/mainVIsual/mainVIsual_sp.jpg.jpg");
+  background-position: center;
+}
+@media (min-width: 768px){
+  .mainVIsual{
+    background-image: url("../images/mainVIsual/mainVIsual_pc.jpg.jpg");
+  }
+}
+
+.mainVIsual-container{
+  top: 70px;
+  left: -15px;
+  width: 390px;
+  height: 250px;
+}
+
+.achievement{
+  display: flex;
+  padding-top: 34px;
+  margin-left: 16px
+}
+
+.achievement img{
+  height: 68.65px;
+  width: auto;
+}
+
+.ranking-list-group{
+  text-align: center;
+  
+}
+
+.ranking-title-small{
+  font-size: 0.675rem;
+  line-height: 1.25;
+  padding-top: 1px;
+}
+
+.ranking-title{
+  color: #F11F8D;
+  font: italic normal 800 25px / 55px Poppins;
+  letter-spacing: 0px;
+}
+
+.ranking-text-big{
+  font: italic normal 800 36px/55px Poppins;
+}
+
+.mainVIsual-text-group{
+  margin-top: 11.68px;
+  margin-left: 16px;
+}
+
+.mainVIsual-text-small{
+  font-size: 14px;
+}
+
+.mainVIsual-text-big{
+  font: normal normal 900 25px / 36px Source Han Sans JP;
+  letter-spacing: 0px;
+  color: #005BAC;
+  opacity: 1;
+}
+
+
+/*3つのボタン
+------------------------------------------ */
+.button-group{
+  padding: 24px 62px 24px 63px;
+}
+
+.button-first{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 6px;
+  max-width: 250px;
+  height: 48px;
+  margin-bottom: 12px;
+  background-color: #77CB33;
+  border-radius: 25px;
+  font: normal normal bold 16px / 36px Source Han Sans JP;
+  color: #FFFFFF;
+}
+
+.button-second{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 6px;
+  max-width: 250px;
+  height: 48px;
+  margin-bottom: 12px;
+  background-color: #F6AA00;
+  border-radius: 25px;
+  font: normal normal bold 16px / 36px Source Han Sans JP;
+  color: #FFFFFF;
+}
+
+.button-third{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 6px;
+  max-width: 250px;
+  height: 48px;
+  background-color: #3AC8AD;
+  border-radius: 25px;
+  font: normal normal bold 16px / 36px Source Han Sans JP;
+  color: #FFFFFF;
+}
+
+
+/*選ばれる3つの理由
+------------------------------------------ */
+.reason-title{
+  margin-top: 11px;
+  margin-bottom: 24px;
+  text-align: center;
+  font: normal normal bold 28px/36px Source Han Sans JP;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.emphasis-title{
+  font: normal normal bold 40px/36px Poppins;
+  color: #F11F8D;
+}
+
+.reason-item img{
+  margin-left: 16px;
+  width: 343px;
+  height: 220px;
+}
+
+.reasons-text-group{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.reason-number{
+  padding-top: 16px;
+  font: italic normal bold 24px/36px Poppins;
+  letter-spacing: 0px;
+  color: #F11F8D;
+}
+
+.number{
+  font: italic normal bold 36px/36px Poppins;
+  margin-left: 8px
+}
+
+.reasons-title{
+  font: normal normal bold 20px/36px Source Han Sans JP;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  line-height: 1.5;
+}
+
+.reasons-text{
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+
+/*申し込み
+------------------------------------------ */
+.application-design{
+  padding: 40px 35px;
+  background: #FF55551A 0% 0% no-repeat padding-box;
+}
+
+.application-section-title{
+  text-align: center;
+  margin-bottom: 8px;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.button-blue{
+  display: flex;
+  justify-content: center;
+  background-color: #0271E0;
+  border-radius: 35px;
+  font: normal normal bold 20px / 36px Source Han Sans JP;
+  letter-spacing: 0px;
+  padding: 17.25px 53px 17.25px 52px;
+}
+
+
+/*コース・目的
+------------------------------------------ */
+.course-purpose{
+  margin: 64px 0px;
+  background: #F2F9FF 0% 0% no-repeat padding-box;
+}
+@media (min-width: 768px){
+  .course-purpose{
+    margin: 5.75rem 14.25rem 6rem;
+  }
+}
+
+.course-purpose-title{
+  font: normal normal bold 18px/36px Source Han Sans JP;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px){
+  .course-section-title{
+    font-size: 2.25rem;
+    margin-bottom: 3.25rem;
+  }
+}
+
+.course-section-title::after{
+  position: absolute;
+  top: 3.0625rem;
+  left: 10.5rem;
+  display: block;
+  background-color: #0079f2;
+  width: 1.5rem;
+  height: 0.125rem;
+  content: "";
+}
+
+/* タブナビゲーション */
+.tab.st > .nav {
+  display: flex;
+  column-gap: 0.5rem;
+  font-weight: bold;
+  flex-direction: row !important;
+}
+@media (min-width: 768px){
+  .tab.st > .nav{
+    column-gap: 1.5rem;
+  }
+}
+
+/* タブ周りの線を削除 */
+.st-theme-basic {
+  border: none;
+}
+
+/* タブ1、タブ2...下のボックスシャドウを無効にする */
+.st-theme-basic>.nav {
+box-shadow: none !important;
+}
+
+/* タブ1、タブ2の文字色 */
+.st-theme-basic>.nav .nav-link {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  background-color: #f0f0f0;
+  color: #040000;
+  border-radius: 0.937rem 0.937rem 0 0;
+}
+@media (min-width: 768px){
+  .st-theme-basic>.nav .nav-link{
+    font-size: 1.625rem;
+    padding-top: 1.65rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+
+/* 選択中タブ */
+.st-theme-basic>.nav .nav-link.active {
+  color: #333333 !important;
+  background-color: #F2F9FF;
+}
+
+/* 選択中のタブの下線の色を変更 */
+.st-theme-basic>.nav .nav-link.active::after {
+  background-color: unset !important;
+}
+
+.tab-content{
+  text-align: center;
+  padding: 1rem;
+  background-color: #F2F9FF;
+}
+@media (min-width: 768px){
+  .tab-content{
+    padding: 1.5rem;
+  }
+}
+
+
+.tab.st-theme-basic > .tab-content > .tab-pane{
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .tab.st-theme-basic > .tab-content > .tab-pane {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+}
+
+/* タイトル */
+.course-tab-content-title{
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+@media (min-width: 768px){
+  .course-tab-content-title{
+    font-size: 1.5rem;
+    margin-top: 0.625rem;
+    line-height: 1;
+  }
+}
+
+.course-tab-list{
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 768px){
+  .course-tab-list{
+    font-size: 1.125rem;
+  }
+}
+
+.course-tab-content-item img{
+  width: 100%;
+  border-radius: 0.75rem;
+}
