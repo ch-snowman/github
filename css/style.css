@@ -44,7 +44,7 @@ body {
   position: fixed;
   z-index: 100;
   display: flex;
-  padding: 18px 16px;
+  padding: 20px 16px;
   top: 0px;
   left: 0px;
   width: 375px;
@@ -54,11 +54,12 @@ body {
   opacity: 1;
 }
 @media (min-width: 768px){
-.header{
-  width: 1920px;
-  height: 101px;
-  box-shadow: 0px 2px 8px #00000029;
-}
+  .header{
+    width: 1920px;
+    height: 101px;
+    box-shadow: 0px 2px 8px #00000029;
+    padding: 28px 380px 
+  }
 }
 
 /* ロゴ */
@@ -69,9 +70,10 @@ body {
   height: 34px;
 }
 @media (min-width: 768px){
-.header-logo-link{
-  width: 12.5rem;
-}
+  .header-logo-link{
+    width: 241px;
+    height: 45px
+  }
 }
 
 .header-logo img {
@@ -117,7 +119,6 @@ visibility: hidden;
 @media (min-width: 768px){
 .hamburger-menu{
   display: flex;
-  position: relative;
   top: unset;
   left: unset;
   visibility: visible;
@@ -131,7 +132,7 @@ visibility: hidden;
 }
 
 @media (min-width: 768px){
-.header .button-pink{
+.header .button{
   display: none;
 }
 }
@@ -180,13 +181,13 @@ visibility: visible;
 .mainVIsual{
   margin-top: 70px;
   width: 100%;
-  height: 15.625rem;
   background-image: url("../images/mainVIsual/mainVIsual_sp.jpg.jpg");
-  background-position: center;
 }
 @media (min-width: 768px){
   .mainVIsual{
     background-image: url("../images/mainVIsual/mainVIsual_pc.jpg.jpg");
+    margin-top: 104px;
+    height: 651px; 
   }
 }
 
@@ -196,16 +197,37 @@ visibility: visible;
   width: 390px;
   height: 250px;
 }
+@media (min-width: 768px){
+  .mainVIsual-container{
+    width: 1920px;
+    height: 651px;
+    padding-top: 104px;
+    padding-left: 410px;
+  }
+}
+
+.mainVIsual-text-group{
+  padding-top: 34px;
+  margin-left: 16px;
+}
 
 .achievement{
   display: flex;
-  padding-top: 34px;
-  margin-left: 16px
+}
+@media (min-width: 768px){
+  .achievement{
+
+  }
 }
 
 .achievement img{
   height: 68.65px;
   width: auto;
+}
+@media (min-width: 768px){
+  .achievement img{
+    height: 150px;
+  }
 }
 
 .ranking-list-group{
@@ -214,9 +236,15 @@ visibility: visible;
 }
 
 .ranking-title-small{
-  font-size: 0.675rem;
+  font:  normal normal 11px/16px Source Han Sans JP;
   line-height: 1.25;
   padding-top: 1px;
+}
+@media (min-width: 768px){
+  .ranking-title-small{
+    font: normal normal normal 20px/29px Source Han Sans JP;
+    padding: 9px 20px 0px 20px;
+  }
 }
 
 .ranking-title{
@@ -224,18 +252,32 @@ visibility: visible;
   font: italic normal 800 25px / 55px Poppins;
   letter-spacing: 0px;
 }
+@media (min-width: 768px){
+  .ranking-title{
+    font: italic normal 800 54px/111px Poppins;
+  }
+}
 
 .ranking-text-big{
   font: italic normal 800 36px/55px Poppins;
 }
+@media (min-width: 768px){
+  .ranking-text-big{
+    font: italic normal 800 74px/111px Poppins;
+  }
+}
 
-.mainVIsual-text-group{
+.mainVIsual-text-item{
   margin-top: 11.68px;
-  margin-left: 16px;
 }
 
 .mainVIsual-text-small{
   font-size: 14px;
+}
+@media (min-width: 768px){
+  .mainVIsual-text-small{
+    font: normal normal normal 33px/36px Source Han Sans JP;
+  }
 }
 
 .mainVIsual-text-big{
@@ -243,6 +285,11 @@ visibility: visible;
   letter-spacing: 0px;
   color: #005BAC;
   opacity: 1;
+}
+@media (min-width: 768px){
+  .mainVIsual-text-big{
+    font: normal normal 900 60px/85px Source Han Sans JP;
+  }
 }
 
 
@@ -297,7 +344,7 @@ visibility: visible;
 /*選ばれる3つの理由
 ------------------------------------------ */
 .reason-title{
-  margin-top: 11px;
+  margin-top: 225px;
   margin-bottom: 24px;
   text-align: center;
   font: normal normal bold 28px/36px Source Han Sans JP;
@@ -376,7 +423,7 @@ visibility: visible;
 ------------------------------------------ */
 .course-purpose{
   margin: 64px 0px;
-  background: #F2F9FF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
 }
 @media (min-width: 768px){
   .course-purpose{
@@ -385,9 +432,9 @@ visibility: visible;
 }
 
 .course-purpose-title{
-  font: normal normal bold 18px/36px Source Han Sans JP;
+  font: normal normal bold 28px/36px Source Han Sans JP;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 42px;
 }
 @media (min-width: 768px){
   .course-section-title{
@@ -396,21 +443,11 @@ visibility: visible;
   }
 }
 
-.course-section-title::after{
-  position: absolute;
-  top: 3.0625rem;
-  left: 10.5rem;
-  display: block;
-  background-color: #0079f2;
-  width: 1.5rem;
-  height: 0.125rem;
-  content: "";
-}
-
 /* タブナビゲーション */
 .tab.st > .nav {
   display: flex;
-  column-gap: 0.5rem;
+  justify-content: center;
+  column-gap: 15px;
   font-weight: bold;
   flex-direction: row !important;
 }
@@ -432,8 +469,7 @@ box-shadow: none !important;
 
 /* タブ1、タブ2の文字色 */
 .st-theme-basic>.nav .nav-link {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 20px 19px;
   font-size: 1.125rem;
   line-height: 1;
   background-color: #f0f0f0;
@@ -461,8 +497,6 @@ box-shadow: none !important;
 }
 
 .tab-content{
-  text-align: center;
-  padding: 1rem;
   background-color: #F2F9FF;
 }
 @media (min-width: 768px){
@@ -471,12 +505,12 @@ box-shadow: none !important;
   }
 }
 
-
 .tab.st-theme-basic > .tab-content > .tab-pane{
   flex-direction: column;
   row-gap: 2rem;
-  padding: 1.5rem;
-  background-color: #ffffff;
+  padding: 28px 16px 56px;
+  margin-top: 18px;
+  background-color: #F2F9FF;
 }
 @media (min-width: 768px) {
   .tab.st-theme-basic > .tab-content > .tab-pane {
@@ -488,8 +522,8 @@ box-shadow: none !important;
 
 /* タイトル */
 .course-tab-content-title{
-  font-size: 1.25rem;
-  line-height: 1.35;
+  font-size: 20px;
+  margin-top: 8px;
 }
 @media (min-width: 768px){
   .course-tab-content-title{
@@ -511,5 +545,77 @@ box-shadow: none !important;
 
 .course-tab-content-item img{
   width: 100%;
+  height: 220px;
   border-radius: 0.75rem;
+}
+
+/*費用
+------------------------------------------ */
+.cost{
+  margin: 64px 16px;
+}
+
+.cost-title{
+  font: normal normal bold 28px/36px Source Han Sans JP;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table{
+  border: solid 3px #CCCCCC;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead{
+  background-color: #f5f5f5;
+  font-size: 1rem;
+}
+
+th{
+  border: solid 1px #dddddd;
+  font: normal normal normal 16px/36px Source Han Sans JP;
+}
+
+tr{
+  border: solid 1px #dddddd;
+}
+
+.course-plan{
+  font: normal normal normal 16px / 36px Source Han Sans JP;
+  padding: 21px 45px 20px 44px;
+}
+
+
+/*よくあるご質問&お近くの教室を探す
+------------------------------------------ */
+.question{
+  background-image: url("../images/question-research/pht_qa.jpg.png.8.png");
+  width: 100%;
+  height: 170px; 
+}
+
+.research{
+  background-image: url("../images/question-research/pht_classrooms.jpg.png.9.png");
+  width: 100%;
+  height: 170px; 
+}
+
+.question-title{
+
+}
+
+
+/*フッター
+------------------------------------------ */
+.footer{
+  color: #DDDDDD;
+}
+
+.footer-copyright{
+  margin: 32px 16px 32px 19px;
+  font: normal normal normal 13px/28px Poppins;
+  letter-spacing: 0px;
+  color: #333333;
 }
