@@ -8,7 +8,6 @@ body {
   }
   
   a {
-    color: #ffffff;
     text-decoration: none;
   }
   
@@ -55,10 +54,12 @@ body {
 }
 @media (min-width: 768px){
   .header{
+    display: flex;
+    justify-content: space-between;
     width: 1920px;
     height: 101px;
     box-shadow: 0px 2px 8px #00000029;
-    padding: 28px 380px 
+    padding: 28px 380px
   }
 }
 
@@ -118,7 +119,9 @@ visibility: hidden;
 }
 @media (min-width: 768px){
 .hamburger-menu{
+  position: unset;
   display: flex;
+  align-items: center;
   top: unset;
   left: unset;
   visibility: visible;
@@ -155,8 +158,6 @@ visibility: visible;
   .hamburger-menu-list{
   display: flex;
   column-gap: 2.25rem;
-  margin-right: 1.5rem;
-  font-size: 0.9375rem;
   }
 }
 
@@ -167,12 +168,45 @@ visibility: visible;
   opacity: 1;
   border-bottom: 1px solid;
 }
+@media (min-width: 768px){
+  .menu-list{
+    font: normal normal medium 20px/36px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    border-bottom: none;
+  }
+}
+
+.hamburger-menu-application{
+  margin: 32px 20px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 33px;
+}
+@media (min-width: 768px){
+  .hamburger-menu-application{
+    background: transparent linear-gradient(90deg, #0271E0 0%, #53A2F0 100%) 0% 0% no-repeat padding-box;
+    border-radius: 31px;
+  }
+}
+
+.hamburger-menu-application-text{
+  padding: 20px 85px;
+  font: normal normal bold 18px/26px Source Han Sans JP;
+  color: #005BAC;
+}
+@media (min-width: 768px){
+  .hamburger-menu-application-text{
+    padding: 16px 41px;
+    font: normal normal bold 20px/36px Source Han Sans JP;
+    color: #FFFFFF;
+  }
+}
 
 .button-icon{
   width: 14px;
   height: 12px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-
 }
 
 
@@ -277,6 +311,7 @@ visibility: visible;
 @media (min-width: 768px){
   .mainVIsual-text-small{
     font: normal normal normal 33px/36px Source Han Sans JP;
+    margin-top: 32px;
   }
 }
 
@@ -296,7 +331,14 @@ visibility: visible;
 /*3つのボタン
 ------------------------------------------ */
 .button-group{
-  padding: 24px 62px 24px 63px;
+  padding: 59px 62px 24px 63px;
+}
+@media (min-width: 768px){
+  .button-group{
+    display: flex;
+    column-gap: 40px;
+    padding-top: 103px
+  }
 }
 
 .button-first{
@@ -311,6 +353,11 @@ visibility: visible;
   border-radius: 25px;
   font: normal normal bold 16px / 36px Source Han Sans JP;
   color: #FFFFFF;
+}
+@media (min-width: 768px){
+  .button-first{
+    padding: 20px 62px;
+  }
 }
 
 .button-second{
