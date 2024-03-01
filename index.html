@@ -34,8 +34,8 @@
         <nav class="hamburger-menu">
             <ul class="hamburger-menu-list">
                 <li class="menu-list"><i class="button-icon button-white-icon bi bi-arrow-right-short"></i><a href="#">選ばれる3つの理由</a></li>
-                <li class="menu-list"><a href="#">コース・目的</a></li>
-                <li class="menu-list"><a href="#">費用</a><li>
+                <li class="menu-list"><i class="button-icon button-white-icon bi bi-arrow-right-short"></i><a href="#">コース・目的</a></li>
+                <li class="menu-list"><i class="button-icon button-white-icon bi bi-arrow-right-short"></i><a href="#"><span class="menu-cost">費用</span></a><li>
             </ul> 
             <div class="hamburger-menu-application">
                 <div class="hamburger-menu-application-text">入学説明会に申し込む</div>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- 選ばれる3つの理由 -->
-    <div class="reason for choosing">
+    <div class="reason-for-choosing">
         <h2 class="reason-title">選ばれる<span class="emphasis-title">3</span>つの理由</h2>
         <ul class="nth-child">
             <li class="reason-item">
@@ -85,16 +85,16 @@
                 <img src="./images/reason/pht_reason02.jpg.jpg" alt="選ばれる理由2">
                 <div class="reasons-text-group">
                     <div class="reason-number">Point<span class="number">2</span></div>
-                    <div class="reasons-title">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
-                    <div class="reasons-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+                    <div class="reasons-title two-lines">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
+                    <div class="reasons-text text-adjustment">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
                 </div>
             </li>
             <li class="reason-item">
                 <img src="./images/reason/pht_reason03.jpg.jpg" alt="選ばれる理由3">
                 <div class="reasons-text-group">
                     <div class="reason-number">Point<span class="number">3</span></div>
-                    <div class="reasons-title">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
-                    <div class="reasons-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+                    <div class="reasons-title two-lines">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
+                    <div class="reasons-text text-adjustment">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
                 </div>
             </li>
         </ul>
@@ -184,7 +184,7 @@
         <div class="cost-container">
             <table>
                 <thead>
-                    <tr>
+                    <tr class="table heading">
                         <th class="menu-plan">年間講数</th>
                         <th class="annual-fee">年間授業料（税込み）</th>
                     </tr>
@@ -192,37 +192,37 @@
                 <tbody>
                     <tr>
                         <th class="course-plan">5講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">24,500</span>円</p>
                         </td>
                     </tr>
                     <tr>
                         <th class="course-plan">10講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">49,000</span>円</p>
                         </td>
                     </tr>
                     <tr>
                         <th class="course-plan">11講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">53,900</span>円</p>
                         </td>
                     </tr>
                     <tr>
                         <th class="course-plan">12講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">58,800</span>円</p>
                         </td>
                     </tr>
                     <tr>
                         <th class="course-plan">22講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">107,800</span>円</p>
                         </td>
                     </tr>
                     <tr>
                         <th class="course-plan">24講</th>
-                        <td class="course-price">
+                        <td class="course-price-column">
                             <p class="price"><span class="course-price">117,600</span>円</p>
                         </td>
                     </tr>
@@ -240,11 +240,13 @@
     </div>
     
     <!-- よくあるご質問&お近くの教室を探す -->
-    <div class="question">
-        <h3 class="question-title">よくあるご質問</h3>
-    </div>
-    <div class="research">
-        <h3 class="research-title">お近くの教室を探す</h3>
+    <div class="question-resarch">
+        <div class="question">
+            <h3 class="question-title">よくあるご質問</h3>
+        </div>
+        <div class="research">
+            <h3 class="research-title">お近くの教室を探す</h3>
+        </div>
     </div>
 
     <!-- フッター -->
