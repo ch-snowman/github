@@ -969,28 +969,28 @@ cost-container tbody th:first-child{
 }
 
 .question{
-  background-image: url("../images/question-research/pht_qa.jpg.png.8.png");
+  background-image: url("../images/question-research/pht_qa.8.jpg");
   display: block;
   width: 100%;
   height: 170px; 
 }
 @media (min-width: 768px){
   .question{
-    background-image: url("../images/question-research/pht_qa.jpg.png");
+    background-image: url("../images/question-research/pht_qa.pc.jpg");
     width: 960px;
     height: 320px;
   }
 }
 
 .research{
-  background-image: url("../images/question-research/pht_classrooms.jpg.png.9.png");
+  background-image: url("../images/question-research/pht_classrooms.9.jpg");
   display: block;
   width: 100%;
   height: 170px; 
 }
 @media (min-width: 768px){
   .research{
-    background-image: url("../images/question-research/pht_classrooms.jpg.jpg");
+    background-image: url("../images/question-research/pht_classrooms.pc.jpg");
     width: 960px;
     height: 320px;
   }
