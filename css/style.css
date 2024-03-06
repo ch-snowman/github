@@ -2,7 +2,6 @@
 ------------------------------------------ */
 body {
     font-family: Noto Sans JP;
-    font-weight: Regular;
     line-height: 1.75;
     color: #333333;
   }
@@ -46,7 +45,7 @@ a {
   align-items: center;
   top: 0px;
   left: 0px;
-  width: 375px;
+  width: 100%;
   height: 70px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 8px #0000001A;
@@ -56,24 +55,25 @@ a {
   .header{
     display: flex;
     justify-content: space-between;
-    width: 1920px;
+    width: 100%;
     height: 101px;
     box-shadow: 0px 2px 8px #00000029;
-    padding: 28px 380px
+    padding: 28px 19.8%;
   }
 }
 
 /* ロゴ */
 .header-logo-link{
-  position: fixed;
+  display: flex;
   left: 16px;
   width: 166px;
   height: 34px;
 }
 @media (min-width: 768px){
   .header-logo-link{
-    width: 241px;
-    height: 45px
+    width: 12.5%;
+    height: 45px;
+    left: 19.8%;
   }
 }
 
@@ -244,47 +244,38 @@ visibility: visible;
 
 /*メインビジュアル
 ------------------------------------------ */
-.mainVIsual{
+.main-visual{
   margin-top: 70px;
   width: 100%;
   background-image: url("../images/mainVIsual/mainVIsual_sp.jpg.jpg");
 }
 @media (min-width: 768px){
-  .mainVIsual{
+  .main-visual{
     background-image: url("../images/mainVIsual/mainVIsual_pc.jpg.jpg");
     margin-top: 104px;
     height: 651px; 
   }
 }
 
-.mainVIsual-container{
+.main-visual-container{
   top: 70px;
   left: -15px;
-  width: 390px;
+  width: 100%;
   height: 250px;
   padding-top: 34px; 
   padding-left: 16px;
 }
 @media (min-width: 768px){
-  .mainVIsual-container{
-    width: 1920px;
+  .main-visual-container{
+    width: 100%;
     height: 651px;
-    padding-top: 104px;
-    padding-left: 410px;
+    padding-top: 5.4%;
+    padding-left: 21.5%;
   }
-}
-
-.mainVIsual-text-group{
-
 }
 
 .achievement{
   display: flex;
-}
-@media (min-width: 768px){
-  .achievement{
-
-  }
 }
 
 .achievement img{
@@ -334,28 +325,28 @@ visibility: visible;
   }
 }
 
-.mainVIsual-text-item{
+.main-visual-text-item{
   margin-top: 11.68px;
 }
 
-.mainVIsual-text-small{
+.main-visual-text-small{
   font-size: 14px;
 }
 @media (min-width: 768px){
-  .mainVIsual-text-small{
+  .main-visual-text-small{
     font: normal normal normal 33px/36px Source Han Sans JP;
     margin-top: 32px;
   }
 }
 
-.mainVIsual-text-big{
+.main-visual-text-big{
   font: normal normal 900 25px / 36px Source Han Sans JP;
   letter-spacing: 0px;
   color: #005BAC;
   opacity: 1;
 }
 @media (min-width: 768px){
-  .mainVIsual-text-big{
+  .main-visual-text-big{
     font: normal normal 900 60px/85px Source Han Sans JP;
     margin-top: 10px;
   }
@@ -450,14 +441,13 @@ visibility: visible;
 /*選ばれる3つの理由
 ------------------------------------------ */
 .reason-for-choosing{
-  margin-top: 225px;
-  margin-bottom: 32px;
-  padding: 0px 16px;
+  padding: 225px 16px 32px;
+  margin: auto;
 }
 @media (min-width: 768px){
   .reason-for-choosing{
-    margin-top: 125px;
-    margin-bottom: 72px;
+    padding-top: 125px;
+    padding-bottom: 72px;
   }
 }
 
@@ -485,24 +475,24 @@ visibility: visible;
   }
 }
 
-.nth-child{
+.three-reasons{
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
 @media (min-width: 768px){
-  .nth-child{
+  .three-reasons{
     max-width: 1160px;
     margin: auto;
     row-gap: 48px;
   }
 }
 
-.nth-child li:nth-child(2){
+.three-reasons li:nth-child(2){
   line-height: 1.6;
 }
 
-.nth-child li:last-child{
+.three-reasons li:last-child{
   line-height: 1.6;
 }
 
@@ -572,7 +562,7 @@ visibility: visible;
 }
 @media (min-width: 768px){
   .two-lines{
-    line-height: 1.7;
+    line-height: 1.75;
   }
 }
 
@@ -585,7 +575,7 @@ visibility: visible;
 }
 @media (min-width: 768px){
   .reasons-text{
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
@@ -604,7 +594,7 @@ visibility: visible;
 }
 @media (min-width: 768px){
   .application-design{
-    padding: 55px 750px;
+    padding: 2.8% 39% 2.9%;
   }
 }
 
@@ -651,7 +641,7 @@ visibility: visible;
 }
 @media (min-width: 768px){
   .course-purpose{
-    margin: 80px 380px;
+    margin: 4.2% 19.8% 4%;
   }
 }
 
@@ -675,7 +665,7 @@ visibility: visible;
   justify-content: center;
   column-gap: 15px;
   font-weight: bold;
-  flex-direction: row !important;
+  flex-direction: row;
 }
 @media (min-width: 768px){
   .tab.st > .nav{
@@ -691,7 +681,7 @@ visibility: visible;
 
 /* タブ1、タブ2...下のボックスシャドウを無効にする */
 .st-theme-basic>.nav {
-box-shadow: none !important;
+box-shadow: none;
 }
 
 /* タブ1、タブ2の文字色 */
@@ -715,7 +705,7 @@ box-shadow: none !important;
 
 /* 選択中タブ */
 .st-theme-basic>.nav .nav-link.active {
-  color: #333333 !important;
+  color: #333333;
   background-color: #F2F9FF;
 }
 @media (min-width: 768px){
@@ -723,7 +713,7 @@ box-shadow: none !important;
     display: flex;
     width: 560px;
     padding: 20px 196px;
-    color: #333333 !important;
+    color: #333333;
     background-color: #F2F9FF;
     font: normal normal bold 24px / 36px Source Han Sans JP;
   }
@@ -731,7 +721,7 @@ box-shadow: none !important;
 
 /* 選択中のタブの下線の色を変更 */
 .st-theme-basic>.nav .nav-link.active::after {
-  background-color: unset !important;
+  background-color: unset;
 }
 
 .tab-content{
@@ -763,6 +753,20 @@ box-shadow: none !important;
   }
 }
 
+@media (min-width: 768px){
+  .course-tab-content-item img{
+    /* 拡大するのにかかる時間 */
+    transition:all 0.3s;
+  }
+}
+
+@media (min-width: 768px){
+  .course-tab-content-item img:hover{
+    /* ホバーしたら1.2倍サイズに拡大 */
+    transform: scale(1.2);
+  }
+}
+
 /* タイトル */
 .course-tab-content-title{
   font: normal normal bold 20px/36px Source Han Sans JP;
@@ -771,7 +775,7 @@ box-shadow: none !important;
 @media (min-width: 768px){
   .course-tab-content-title{
     font: normal normal bold 20px / 36px Source Han Sans JP;
-    margin-top: 18px;
+    margin-top: 20px;
     line-height: 1
   }
 }
@@ -798,7 +802,7 @@ box-shadow: none !important;
 }
 @media (min-width: 768px){
   .course-tab-content-item img{
-    width: 532px;
+    width: 100%;
     height: 329px;
   }
 }
@@ -859,11 +863,6 @@ tr{
 
 .menu-plan{
   border-right: none;
-}
-@media (min-width: 768px){
-  .menu-plan{
-    
-  }
 }
 
 .annual-fee{
@@ -955,8 +954,23 @@ cost-container tbody th:first-child{
   }
 }
 
+@media (min-width: 768px){
+  .question img{
+    /* 拡大するのにかかる時間 */
+    transition:all 0.3s;
+  }
+}
+
+@media (min-width: 768px){
+  .question img:hover{
+      /* ホバーしたら1.2倍サイズに拡大 */
+      transform: scale(1.2);
+  }
+}
+
 .question{
   background-image: url("../images/question-research/pht_qa.jpg.png.8.png");
+  display: block;
   width: 100%;
   height: 170px; 
 }
@@ -969,7 +983,8 @@ cost-container tbody th:first-child{
 }
 
 .research{
-  background-image: url("../images/question-research/pht_qa.jpg.png");
+  background-image: url("../images/question-research/pht_classrooms.jpg.png.9.png");
+  display: block;
   width: 100%;
   height: 170px; 
 }
@@ -1013,7 +1028,7 @@ cost-container tbody th:first-child{
 /*フッター
 ------------------------------------------ */
 .footer{
-  color: #DDDDDD;
+  background: #DDDDDD 0% 0% no-repeat padding-box;
   padding: 25px 12px 25px 32px;
   height: 83px;
 }

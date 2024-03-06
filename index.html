@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kira-Kira Juku</title>
+    <title>入学説明会のお申し込み開始 | Kira-Kira Juku</title>
+    <meta name="description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="入学説明会のお申し込み開始 | Kira-Kira Juku">
+    <meta property="og:description" content="
+
+    難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://127.0.0.1:5500/">
+    <meta property="og:image" content="link rel="stylesheet href="http://OGP image.png/css/style.css">
+    <meta property="og:locale" content="Kira-Kira Juku">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +34,9 @@
 </head>
 <body>
     <header class="header">
-        <a href="./" class="header-logo-link"><img src="./images/header/logo.svg.jpg" alt="Kira-Kira Juku"></a>
+        <h1 class="header-logo">
+            <a href="/" class="header-logo-link"><img src="./images/header/logo.svg.jpg" alt="Kira-Kira Juku"></a>
+        </h1>
 
         <!-- ハンバーガーボタン -->
         <button type="button" class="hamburger-button">
@@ -44,9 +57,9 @@
     </header>
 
     <!-- メインビジュアル -->
-    <div class="mainVIsual">
-        <div class="mainVIsual-container">
-            <div class="mainVIsual-text-group">
+    <div class="main-visual">
+        <div class="main-visual-container">
+            <div class="main-visual-text-group">
                 <div class="achievement">
                     <img src="./images/mainVIsual/frame-left.png" alt="">
                     <div class="ranking-list-group">
@@ -55,16 +68,16 @@
                     </div>
                     <img src="./images/mainVIsual/frame-right.png" alt="">
                 </div>
-                <div class="mainVIsual-text-item">
-                    <div class="mainVIsual-text-small">現役高校生・高卒生</div>
-                    <div class="mainVIsual-text-big">入学説明会の<br>お申し込み開始</div>
+                <div class="main-visual-text-item">
+                    <div class="main-visual-text-small">現役高校生・高卒生</div>
+                    <div class="main-visual-text-big">入学説明会の<br>お申し込み開始</div>
                 </div>
             </div>
             <!-- 3つのボタン -->
             <div class="button-group">
-                <div class="button-first">入学のお問い合わせ</div>
-                <div class="button-second">無料体験に申し込む</div>
-                <div class="button-third">資料請求する</div>
+                <a href="/inquiry" class="button-first">入学のお問い合わせ</a>
+                <a href="/freetrial" class="button-second">無料体験に申し込む</a>
+                <a href="/request" class="button-third">資料請求する</a>
             </div>
         </div>
     </div>
@@ -72,9 +85,9 @@
     <!-- 選ばれる3つの理由 -->
     <div class="reason-for-choosing">
         <h2 class="reason-title">選ばれる<span class="emphasis-title">3</span>つの理由</h2>
-        <ul class="nth-child">
+        <ul class="three-reasons">
             <li class="reason-item">
-                <img src="./images/reason/pht_reason01.jpg.jpg" alt="選ばれる理由1">
+                <img src="./images/reason/pht_reason01.jpg.jpg" alt="">
                 <div class="reasons-text-group">
                     <div class="reason-number">Point<span class="number">1</span></div>
                     <div class="reasons-title">実績のある講師陣だから安心</div>
@@ -82,7 +95,7 @@
                 </div>
             </li>
             <li class="reason-item">
-                <img src="./images/reason/pht_reason02.jpg.jpg" alt="選ばれる理由2">
+                <img src="./images/reason/pht_reason02.jpg.jpg" alt="">
                 <div class="reasons-text-group">
                     <div class="reason-number">Point<span class="number">2</span></div>
                     <div class="reasons-title two-lines">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
@@ -90,7 +103,7 @@
                 </div>
             </li>
             <li class="reason-item">
-                <img src="./images/reason/pht_reason03.jpg.jpg" alt="選ばれる理由3">
+                <img src="./images/reason/pht_reason03.jpg.jpg" alt="">
                 <div class="reasons-text-group">
                     <div class="reason-number">Point<span class="number">3</span></div>
                     <div class="reasons-title two-lines">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
@@ -105,7 +118,7 @@
         <div class="under-course-application-container">
             <p class="application-section-title outfit">入学ご検討の方は、まずは入学説明会にお越しください</p>
         </div>
-        <a href="#" class="button button-blue">入学説明会に申し込む</a>
+        <a href="/entry" class="button button-blue">入学説明会に申し込む</a>
     </div>
 
     <!-- コース・目的 -->
@@ -241,12 +254,12 @@
     
     <!-- よくあるご質問&お近くの教室を探す -->
     <div class="question-resarch">
-        <div class="question">
+        <a href="/faq" class="question">
             <h3 class="question-title">よくあるご質問</h3>
-        </div>
-        <div class="research">
+        </a>
+        <a href="/search" class="research">
             <h3 class="research-title">お近くの教室を探す</h3>
-        </div>
+        </a>
     </div>
 
     <!-- フッター -->
@@ -257,7 +270,7 @@
 
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick -->
