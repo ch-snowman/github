@@ -1,0 +1,51 @@
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+    font-family: Noto Sans JP;
+    line-height: 1.75;
+    color: #333333;
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 部品
+------------------------------------------ */
+  /* flexbox */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 部品
+------------------------------------------ */
+.main-visual{
+    background-image: url("../images/main-Visual/mainVisual2_sp.jpg");
+}
+@media (min-width: 768px){
+    .main-visual{
+
+    }
+}
+
+.main-visual-text{
+    text-align: center;
+    font: normal normal normal 24px/30px Marcellus;
+    letter-spacing: 4.8px;
+    color: #000000;
+    opacity: 1;
+}
