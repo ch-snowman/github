@@ -31,21 +31,387 @@ li {
 }
 
 
-/* 部品
+/* ヘッダー
 ------------------------------------------ */
-.main-visual{
-    background-image: url("../images/main-Visual/mainVisual2_sp.jpg");
-}
-@media (min-width: 768px){
-    .main-visual{
-
-    }
+.header{
+    position: relative;
 }
 
-.main-visual-text{
-    text-align: center;
+.header-text{
+    position: absolute;
+    top: 24px;
+    left: 32%;
     font: normal normal normal 24px/30px Marcellus;
     letter-spacing: 4.8px;
     color: #000000;
     opacity: 1;
+}
+@media (min-width: 768px){
+    .header-text{
+        font: normal normal normal 28px/35px Marcellus;
+        top: 32px;
+        left: 44.5%;
+        letter-spacing: 5.6px;
+    }
+}
+
+
+/* カバー
+------------------------------------------ */
+.cover{
+    background-image: url("../images/main-Visual/mainVisual2_sp.jpg");
+    height: 450px;
+    background-size: cover;
+}
+@media (min-width: 768px){
+    .cover{
+        background-image: url("../images/main-Visual/mainVisual2_pc.jpg");
+        height: 720px;
+    }
+}
+
+.cover-title{
+    font: normal normal normal 41px/51px Marcellus;
+    padding-top: 418px ;
+    padding-left: 6%;
+    letter-spacing: 12.3px;
+    color: #000000;
+    opacity: 1;
+}
+@media (min-width: 768px){
+    .cover-title{
+        font: normal normal normal 50px/68px Marcellus;
+        padding-top: 272px;
+        padding-left: 14.875%;
+        letter-spacing: 15px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+.cover-subtitle{
+    font: normal normal normal 20px/29px Noto Serif JP;
+    padding-top: 8px;
+    padding-left: 6%;
+    letter-spacing: 6px;
+    color: #000000;
+    opacity: 1;
+}
+@media (min-width: 768px){
+    .cover-subtitle{
+        font: normal normal normal 25px/36px Noto Serif JP;
+        padding-top: 8px;
+        padding-left: 14.875%;
+        letter-spacing: 7.5px;
+        color: #000000;
+        opacity: 1;
+    }
+}
+
+
+/* 商品購入ボタン
+------------------------------------------ */
+.merchandise-button{
+    margin-top: 157px;
+}
+@media (min-width: 768px){
+
+}
+
+.merchandise-button-inner{
+    background: #F0F4FF 0% 0% no-repeat padding-box;
+    padding: 20px 29px 34px;
+    max-width: 91.7875%;
+    margin: auto;
+}
+@media (min-width: 768px){
+    .merchandise-button-inner{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        max-width: 66.7%;
+    }
+}
+
+.merchandise-button-text{
+    text-align: center;
+    font: normal normal 600 18px / 26px Noto Serif JP;
+    letter-spacing: 1.8px;
+    color: #111111;
+}
+@media (min-width: 768px){
+    .merchandise-button-text{
+        font: normal normal 600 24px/35px Noto Serif JP;
+        letter-spacing: 2.4px;
+    }
+}
+
+.merchandise-button-small-text{
+    font: normal normal normal 14px / 20px Noto Serif JP;
+    letter-spacing: 1.4px;
+}
+@media (min-width: 768px){
+    .merchandise-button-small-text{
+        font: normal normal normal 16px/23px Noto Serif JP;
+        letter-spacing: 1.6px;
+    }
+}
+
+.button-blue{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 15px;
+    font: normal normal 600 18px / 26px Noto Serif JP;
+    background: #46C4DB 0% 0% no-repeat padding-box;
+    border-radius: 34px;
+    color: #FFFFFF;
+}
+@media (min-width: 768px){
+    .button-blue{
+        font: normal normal 600 18px/26px Noto Serif JP;
+        letter-spacing: 0px;
+        padding: 15px 6.46%;
+    }
+}
+
+.button-green{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 22px;
+    padding: 15px;
+    font: normal normal 600 18px / 26px Noto Serif JP;
+    background: #5DD5AB 0% 0% no-repeat padding-box;
+    border-radius: 34px;
+    color: #FFFFFF;
+}
+@media (min-width: 768px){
+    .button-green{
+        font: normal normal 600 18px/26px Noto Serif JP;
+        letter-spacing: 0px;
+        padding: 15px 12.1%;
+    }
+}
+
+
+/* 商品特徴
+------------------------------------------ */
+.feature{
+    margin: 50px 0px;
+}
+
+.feature-container{
+    background-image: url("../images/feature/cream-feature.sp.jpg");
+    background-size: cover;
+    height: 680px;
+}
+
+.feature-title{
+    padding-top: 40px;
+    text-align: center;
+    font: normal normal bold 30px / 54px EB Garamond;
+    color: #FFFFFF;
+}
+
+.feature-sub-title{
+    text-align: center;
+    padding-bottom: 14px;
+    font: normal normal 600 24px / 54px Noto Serif JP;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.feature-text{
+    padding: 0% 4%;
+    font: normal normal normal 14px/32px Noto Serif JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+}
+
+
+/* お客様の声
+------------------------------------------ */
+.voice-carousel{
+    position: relative;
+    margin: 55px 0px;
+}
+@media (min-width: 768px){
+    .voice-carousel{
+    }
+}
+
+.customer-voice-title{
+    text-align: center;
+    font: normal normal bold 30px/32px EB Garamond;
+    letter-spacing: 1.5px;
+    color: #000000;
+}
+
+.customer-voice-sub-title{
+    text-align: center;
+    margin-bottom: 36px;
+    font: normal normal 600 16px/32px Noto Serif JP;
+    letter-spacing: 0.8px;
+}
+
+.bi-arrow-left-circle-fill{
+    position: absolute;
+    top: 240px;
+    left: 16px;
+    font-size: 32px;
+    color: #00AFBF;
+}
+
+@media (min-width: 768px){
+    .customer-voice-container{
+        max-width: 980px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.customer-voice-slick{
+    padding: 0% 14.1%;
+}
+@media (min-width: 768px){
+    .customer-voice-slick{
+        display: flex;
+    }
+}
+
+.customer-voice-item{
+    text-align: center;
+    background: #DBF7F9 0% 0% no-repeat padding-box;
+}
+@media (min-width: 768px){
+    .customer-voice-item{
+        width: 20%;
+        text-align: center;
+        column-gap: 2.6%;
+    }
+}
+
+.customer-voice-inner{
+    padding: 28px 5.5%;
+}
+@media (min-width: 768px){
+    .customer-voice-inner{
+        
+    }
+}
+
+.customer-voice-item img{
+    display: unset;
+    border-radius: 40px;
+}
+
+.customer-voice-name{
+    margin-bottom: 10px;
+    text-align: center;
+    font: normal normal normal 14px / 32px Noto Serif JP;
+    letter-spacing: 0.7px;
+    color: #000000;
+}
+
+.customer-voice-text{
+    text-align: left;
+    font: normal normal normal 14px/28px Noto Serif JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.slick-dots{
+    position: absolute;
+    top: 360px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: 5px solid #EEEEEE;
+    border-radius: 50%;
+}
+
+.slick-dots li button::before {
+    width: 9px;
+    height: 9px;
+    line-height: normal;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+    color: #00AFBF;
+    background-color: #00AFBF;
+    opacity: 1;
+}
+
+.bi-arrow-right-circle-fill{
+    position: absolute;
+    top: 240px;
+    right: 16px;
+    font-size: 32px;
+    color: #00AFBF;
+}
+
+
+/* よくあるご質問
+------------------------------------------ */
+.FAQ{
+    margin: 70px 0px 50px;
+    background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
+}
+
+.FAQ-title{
+    padding-top: 36px;
+    text-align: center;
+    font: normal normal bold 30px/32px EB Garamond;
+    letter-spacing: -1.5px;
+    color: #000000;
+}
+@media (min-width: 768px){
+    .FAQ-title{
+        font: normal normal bold 45px/32px EB Garamond;
+        letter-spacing: 2.25px;
+        color: #000000;
+    }
+}
+
+.FAQ-sub-title{
+    margin-top: 4px;
+    text-align: center;
+    font: normal normal 600 16px/32px Noto Serif JP;
+    letter-spacing: 0.8px;
+    color: #000000;
+}
+@media (min-width: 768px){
+    .FAQ-sub-title{
+        font: normal normal 600 20px/32px Noto Serif JP;
+        letter-spacing: 1px;
+        color: #000000;
+    }
+}
+
+.accordion-item{
+
 }
