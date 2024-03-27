@@ -38,7 +38,7 @@ li {
 }
 
 .header-text{
-    position: absolute;
+    position: fixed;
     top: 24px;
     left: 32%;
     font: normal normal normal 24px/30px Marcellus;
@@ -115,7 +115,9 @@ li {
     margin-top: 157px;
 }
 @media (min-width: 768px){
-
+    .merchandise-button{
+        margin: 48px 0px;
+    }
 }
 
 .merchandise-button-inner{
@@ -208,6 +210,14 @@ li {
     height: 680px;
 }
 
+@media (min-width: 768px){
+    .feature-container{
+        background-image: url("../images/feature/cream-feature.pc.jpg");
+        background-size: cover;
+        height: 550px;
+    }
+}
+
 .feature-title{
     padding-top: 40px;
     text-align: center;
@@ -290,7 +300,6 @@ li {
 }
 @media (min-width: 768px){
     .customer-voice-item{
-        width: 20%;
         text-align: center;
         column-gap: 2.6%;
     }
@@ -412,6 +421,86 @@ li {
     }
 }
 
-.accordion-item{
+.accordion-data{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
 
+.accordion-item{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 20px 16px 33px;
+    margin: auto;
+}
+
+.accordion-title{
+    display: flex;
+}
+
+.accordion-content{
+    font-size: 15px;
+    font-family: EB Garamond;
+    letter-spacing: 0px;
+    color: #444444;
+}
+
+.question{
+    font-size: 16px;
+    font-family: EB Garamond;
+    letter-spacing: 0.8px;
+    color: #444444;
+}
+
+
+/* よくあるご質問下の商品購入ボタン
+------------------------------------------ */
+.merchandise-button-under-FAQ{
+    margin: 50px 0px;
+}
+
+
+/* フッター
+------------------------------------------ */
+.footer-inner{
+    padding: 24px 45px;
+    background: #0071CE 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+@media (min-width: 768px){
+    .footer-inner{
+        display: flex;
+        justify-content: space-around;
+        padding: 32px 0px;
+    }
+}
+
+.footer-text{
+    text-align: center;
+    margin-bottom: 24px;
+    font: normal normal normal 28px/35px Marcellus;
+    letter-spacing: 5.6px;
+    color: #FFFFFF;
+}
+@media (min-width: 768px){
+    .footer-text{
+        font: normal normal normal 32px/40px Marcellus;
+        letter-spacing: 6.4px;
+    }
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    font: normal normal normal 12px/17px Noto Serif JP;
+    letter-spacing: 0px;
+}
+
+.footer-copyright{
+    margin-top: 25px;
+    text-align: center;
+    font: normal normal normal 11px/16px Noto Serif JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
